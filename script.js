@@ -15,4 +15,4 @@ urls.forEach(function(val){
    document.body.innerHTML += "<img src='" + val + "' class='image'>";
 });
 
-document.body.innerHTML += 'len: ' + urls.length;
+document.body.innerHTML += "<div id='footer'>len: " + urls.length + "</div>";
