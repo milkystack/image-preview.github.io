@@ -1,7 +1,7 @@
 
-var url = new URL('https://into-the-program.com?a=100&b=200&c=300');
+var url = new URL(location.href);
 var params = new URLSearchParams(url.search);
 
 for(let param of params){
-    alert(param);
+    document.body.innerText += param[0]; 
 }
