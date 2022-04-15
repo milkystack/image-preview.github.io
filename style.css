@@ -13,11 +13,9 @@ html, body{
   background-color: #303030;
 
   display: flex;
-  justify-content: center;
   align-items: center;
-
 }
 
 .footer_content{
-
+  padding-left: 20px;
 }
