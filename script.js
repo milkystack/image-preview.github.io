@@ -5,6 +5,6 @@ var params = new URLSearchParams(url.search);
 for(let param of params){
     if (param[0] != 'base'){
         url = "https://media.discordapp.net/attachments/" + params.get('base') + param[1]; 
-        document.body.innerHTML += "<a href='" + url + "'>" + url + "</a>"
+        document.body.innerHTML += "<img src='" + url + "'>"
     }
 }
