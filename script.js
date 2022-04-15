@@ -1,6 +1,7 @@
 
 var url = new URL(location.href);
 var params = new URLSearchParams(url.search);
+params = params.sort();
 
 for(let param of params){
     if (param[0] != 'base'){
