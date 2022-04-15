@@ -15,7 +15,7 @@ html, body{
 
 .footer_content{
   display: flex;
-  justify-content: center;
+  align-item: center;
 
   padding-left: 20px;
 }
