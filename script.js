@@ -15,7 +15,7 @@ urls.forEach(function(val){
    document.body.innerHTML += "<img src='" + val + "' class='image'>";
 });
 
-document.body.innerHTML += "<div id='footer'><div class='footer_content'>[mode] waifu2x: " + params.get('waifu2x') + " bgc: " + params.get('bgc') + " anim: " + params.get('anim') + "</div></div>";
+document.body.innerHTML += "<div id='footer'><div class='footer_content'>[mode] waifu2x: " + params.get('waifu2x') + "　bgc: " + params.get('bgc') + "　anim: " + params.get('anim') + "</div></div>";
 document.body.innerHTML += "<div id='footer'><div class='footer_content'>[len] " + urls.length + "</div></div>";
 document.body.innerHTML += "<div id='footer'> <div class='footer_content'>[sherelink] " + params.get('short') + "</div></div>";
 
