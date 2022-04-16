@@ -15,6 +15,6 @@ urls.forEach(function(val){
    document.body.innerHTML += "<img src='" + val + "' class='image'>";
 });
 
-document.body.innerHTML += "<div id='footer'><div class='footer_content'>len: " + urls.length + "</div><div class='footer_content'>mode: ' + params.get('waifu2x') + '</div> </div>";
+document.body.innerHTML += "<div id='footer'><div class='footer_content'>len: " + urls.length + "</div><div class='footer_content'>mode: " + params.get('waifu2x') + "</div></div>";
 
 // きゃーみないで
