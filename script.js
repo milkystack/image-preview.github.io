@@ -18,6 +18,6 @@ urls.forEach(function(val){
 document.body.innerHTML += "<div id='footer'><div class='footer_content'>画像は長押しで保存できます。</div></div>";
 document.body.innerHTML += "<div id='footer'><div class='footer_content'>[mode] waifu2x: " + params.get('waifu2x') + "　bgc: " + params.get('bgc') + "　anim: " + params.get('anim') + "</div></div>";
 document.body.innerHTML += "<div id='footer'><div class='footer_content'>[len] " + urls.length + "</div></div>";
-document.body.innerHTML += "<div id='footer'> <div class='footer_content'>[sherelink] <a>" + params.get('shortlink') + "</a></div></div>";
+document.body.innerHTML += "<div id='footer'> <div class='footer_content'>[sherelink] <a href='" + params.get('shortlink') + "'>" + params.get('shortlink') + "</a></div></div>";
 
 // きゃーみないで
