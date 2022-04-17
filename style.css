@@ -3,6 +3,11 @@ html, body{
   color: #fff;
   font-family: sans-serif;
 }
+
+a{
+  color: #56d6fc;
+}
+
 .image{
   width: calc(100% / 4);
 }
@@ -21,6 +26,4 @@ html, body{
   padding-left: 20px;
 }
 
-a{
-  color: #56d6fc;
-}
+
