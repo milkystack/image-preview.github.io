@@ -4,7 +4,7 @@ var params = new URLSearchParams(url.search);
 urls = []
 
 for(let param of params){
-    if (param[0] != 'base' && param[0] != 'waifu2x' && param[0] != 'bgc' && param[0] != 'anim' && param[0] != 'shortlink'){
+    if (param[0] != 'base' && param[0] != 'waifu2x' && param[0] != 'bgc' && param[0] != 'anim' && param[0] != 'shortlink' && param[0] != 'title' && param[0] != 'link'){
         url = "https://media.discordapp.net/attachments/" + params.get('base') + param[1];
         urls.push(url); 
     }
