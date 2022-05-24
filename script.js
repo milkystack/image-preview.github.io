@@ -1,20 +1,23 @@
 
-var url = new URL(location.href);
-var params = new URLSearchParams(url.search);
-params.sort()
+function loads(){
+    var url = new URL(location.href);
+    var params = new URLSearchParams(url.search);
+    params.sort()
 
-var count = 0;
-for(let param of params){
-    if (param[0] != 'base' && param[0] != 'waifu2x' && param[0] != 'bgc' && param[0] != 'anim' && param[0] != 'shortlink' && param[0] != 'title' && param[0] != 'link'){
-        url = "https://media.discordapp.net/attachments/" + params.get('base') + param[1];
-        if ( url.indexOf('.mp4') != -1) {
-            document.body.innerHTML += "<video src='" + url + "#t=0.001' controls loop playsinline preload='none' class='image'>";
-        }else{
-            document.body.innerHTML += "<img src='" + url + "' class='image'>";
+    var count = 0;
+    for(let param of params){
+        if (param[0] != 'base' && param[0] != 'waifu2x' && param[0] != 'bgc' && param[0] != 'anim' && param[0] != 'shortlink' && param[0] != 'title' && param[0] != 'link'){
+            url = "https://media.discordapp.net/attachments/" + params.get('base') + param[1];
+            if ( url.indexOf('.mp4') != -1) {
+                document.body.innerHTML += "<video src='" + url + "#t=0.001' controls loop playsinline preload='none' class='image'>";
+            }else{
+                document.body.innerHTML += "<img src='" + url + "' class='image'>";
+            }
+            count += 1;
         }
-        count += 1;
     }
 }
+loads();
 
 document.body.innerHTML += "<div id='footer'><div class='footer_content'>画像は長押しで保存できます。</div></div>";
 document.body.innerHTML += "<div id='footer'><div class='footer_content'>[mode] waifu2x: " + params.get('waifu2x') + "　bgc: " + params.get('bgc') + "　anim: " + params.get('anim') + "</div></div>";
