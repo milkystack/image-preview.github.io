@@ -10,7 +10,7 @@ function loads(){
             url = "https://media.discordapp.net/attachments/" + params.get('base') + param[1];
             if ( url.indexOf('.mp4') != -1) {
                 document.body.innerHTML += "<img src='" + url + "' class='image'>";
-                document.body.innerHTML += "<a href='" + url + "' class='image'>スタンプ: " + count + "</a>";
+                document.body.innerHTML += "<a href='" + url + "' download class='image'>ダウンロード</a>";
             }else{
                 document.body.innerHTML += "<img src='" + url + "' class='image'>";
             }
