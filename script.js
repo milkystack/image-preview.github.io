@@ -24,7 +24,7 @@ document.body.innerHTML += "<div id='footer'><div class='footer_content'>[sticke
 document.body.innerHTML += "<div id='footer'><div class='footer_content'>[shere-link] <a href='" + params.get('shortlink') + "'>" + params.get('shortlink') + "</a></div></div>";
 
 }
-setTimeout(loads, 3000);
+setTimeout(loads, 1000);
 
 
 
