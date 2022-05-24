@@ -10,7 +10,7 @@ function loads(){
             url = "https://media.discordapp.net/attachments/" + params.get('base') + param[1];
             if ( url.indexOf('.mp4') != -1) {
                 document.body.innerHTML += "<img src='" + url + "' class='image'>";
-                document.body.innerHTML += "<a href='" + url + "' download class='image'>ダウンロード</a>";
+                document.body.innerHTML += "<a href='" + url + "' download='"+count+".mp4' class='image'>ダウンロード</a>";
             }else{
                 document.body.innerHTML += "<img src='" + url + "' class='image'>";
             }
@@ -23,7 +23,6 @@ function loads(){
     document.body.innerHTML += "<div id='footer'><div class='footer_content'>[content-len] " + count + "</div></div>";
     document.body.innerHTML += "<div id='footer'><div class='footer_content'>[sticker-link] <a href='" + params.get('link') + "'>" + params.get('title') + "</a></div></div>";
     document.body.innerHTML += "<div id='footer'><div class='footer_content'>[shere-link] <a href='" + params.get('shortlink') + "'>" + params.get('shortlink') + "</a></div></div>";
-
 }
 setTimeout(loads, 100);
 
