@@ -16,14 +16,15 @@ function loads(){
             count += 1;
         }
     }
-}
-setTimeout(loads, 3000);
-
-document.body.innerHTML += "<div id='footer'><div class='footer_content'>画像は長押しで保存できます。</div></div>";
+    
+    document.body.innerHTML += "<div id='footer'><div class='footer_content'>画像は長押しで保存できます。</div></div>";
 document.body.innerHTML += "<div id='footer'><div class='footer_content'>[mode] waifu2x: " + params.get('waifu2x') + "　bgc: " + params.get('bgc') + "　anim: " + params.get('anim') + "</div></div>";
 document.body.innerHTML += "<div id='footer'><div class='footer_content'>[content-len] " + count + "</div></div>";
 document.body.innerHTML += "<div id='footer'><div class='footer_content'>[sticker-link] <a href='" + params.get('link') + "'>" + params.get('title') + "</a></div></div>";
 document.body.innerHTML += "<div id='footer'><div class='footer_content'>[shere-link] <a href='" + params.get('shortlink') + "'>" + params.get('shortlink') + "</a></div></div>";
 
-// きゃーみないで
+}
+setTimeout(loads, 3000);
+
+
 
