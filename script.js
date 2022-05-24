@@ -9,6 +9,7 @@ function loads(){
         if (param[0] != 'base' && param[0] != 'waifu2x' && param[0] != 'bgc' && param[0] != 'anim' && param[0] != 'shortlink' && param[0] != 'title' && param[0] != 'link'){
             url = "https://media.discordapp.net/attachments/" + params.get('base') + param[1];
             if ( url.indexOf('.mp4') != -1) {
+                document.body.innerHTML += "<img src='" + url + "' class='image'>";
                 document.body.innerHTML += "<a href='" + url + "' class='image'>スタンプ: " + count + "</a><br>";
             }else{
                 document.body.innerHTML += "<img src='" + url + "' class='image'>";
