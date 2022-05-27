@@ -6,7 +6,7 @@ var fruits = ["base", "waifu2x", "bgc", "anim", "shortlink", "title", "link"];
 
 var count = 0;
 for(let param of params){
-    if(fruits.indexOf(param[0]) > -1) {
+    if(fruits.indexOf(param[0]) =< -1) {
         url = "https://media.discordapp.net/attachments/" + params.get('base') + param[1];
         if ( url.indexOf('.mp4') != -1) {
             document.body.innerHTML += "<a href='" + url + "'><img src='" + url + "' class='image'></a>";
