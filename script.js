@@ -2,9 +2,11 @@ var url = new URL(location.href);
 var params = new URLSearchParams(url.search);
 params.sort()
 
+var fruits = ["base", "waifu2x", "bgc", "anim", "shortlink", "title", "link"];
+
 var count = 0;
 for(let param of params){
-    if (param[0] != 'base' && param[0] != 'waifu2x' && param[0] != 'bgc' && param[0] != 'anim' && param[0] != 'shortlink' && param[0] != 'title' && param[0] != 'link'){
+    if(fruits.indexOf(param[0]) > -1) {
         url = "https://media.discordapp.net/attachments/" + params.get('base') + param[1];
         if ( url.indexOf('.mp4') != -1) {
             document.body.innerHTML += "<a href='" + url + "'><img src='" + url + "' class='image'></a>";
