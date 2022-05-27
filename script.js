@@ -3,6 +3,7 @@ var params = new URLSearchParams(url.search);
 params.sort()
 
 var fruits = ["base", "waifu2x", "bgc", "anim", "shortlink", "title", "link"];
+alert(params[0][1]);
 
 var count = 0;
 for(let param of params){
