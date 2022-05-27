@@ -24,4 +24,4 @@ document.body.innerHTML += "<div id='footer'><div class='footer_content'>[sticke
 document.body.innerHTML += "<div id='footer'><div class='footer_content'>[shere-link] <a href='" + params.get('shortlink') + "'>" + params.get('shortlink') + "</a></div></div>";
 
 document.title = params.get('title') + " - Archive";
-
+icon.href = "1";
