@@ -3,18 +3,20 @@ var params = new URLSearchParams(url.search);
 params.sort()
 
 var fruits = ["base", "waifu2x", "bgc", "anim", "shortlink", "title", "link"];
-alert(params[0][1]);
 
 var count = 0;
 for(let param of params){
     if(fruits.indexOf(param[0]) <= -1) {
         url = "https://media.discordapp.net/attachments/" + params.get('base') + param[1];
+        if (count == 0) {
+            icon.href = url;
+        }
         if ( url.indexOf('.mp4') != -1) {
             document.body.innerHTML += "<a href='" + url + "'><img src='" + url + "' class='image'></a>";
         }else{
             document.body.innerHTML += "<img src='" + url + "' class='image'>";
         }
-        count += 1;
+        count += 1;      
     }
 }
     
@@ -25,4 +27,3 @@ document.body.innerHTML += "<div id='footer'><div class='footer_content'>[sticke
 document.body.innerHTML += "<div id='footer'><div class='footer_content'>[shere-link] <a href='" + params.get('shortlink') + "'>" + params.get('shortlink') + "</a></div></div>";
 
 document.title = params.get('title') + " - Archive";
-icon.href = "1";
