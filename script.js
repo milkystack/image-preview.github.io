@@ -23,5 +23,5 @@ document.body.innerHTML += "<div id='footer'><div class='footer_content'>[conten
 document.body.innerHTML += "<div id='footer'><div class='footer_content'>[sticker-link] <a href='" + params.get('link') + "'>" + params.get('title') + "</a></div></div>";
 document.body.innerHTML += "<div id='footer'><div class='footer_content'>[shere-link] <a href='" + params.get('shortlink') + "'>" + params.get('shortlink') + "</a></div></div>";
 
-
+document.title = params.get('title') + " - Archive";
 
